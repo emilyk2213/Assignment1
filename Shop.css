@@ -1,0 +1,103 @@
+.box{
+    text-align: left;
+    width:40%;
+    padding: 10px;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    margin-left: 1%;
+    margin-right: 1%;
+    background: #FFE4D3;
+    border-radius: 25px;
+    border: 2px solid black;
+    overflow:visible;
+    font-family: 'Castoro', serif;
+    box-shadow: -4px 3px 8px -3px rgba(0,0,0,0.71);
+}
+
+#box_heading{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Orelega One', cursive;
+    font-stretch: expanded;
+}
+
+#customers, #product, #transaction{
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    border-collapse: collapse;
+    width:90%;
+  }
+
+#customers tr, #customers td, #product tr, #product td, #transaction tr, #transaction td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#customers tr:nth-child(even), #product tr:nth-child(even), #transaction tr:nth-child(even){
+      background-color: #f2f2f2;
+    }
+#customers tr:nth-child(odd), #product tr:nth-child(odd), #transaction tr:nth-child(odd){
+        background-color: #b3adadb6;
+    }
+  
+#customers tr:hover, #product tr:hover, #transaction tr:hover {
+      background-color: #bd9090;
+    }
+
+    /* Heading: First name and Last name */
+#customers th{
+    text-align: left;
+    background-color: #633f1d;
+    color: white;
+    border: 2px solid black;
+    width: auto;
+    padding:5px;
+  }
+  #product th{
+    text-align: left;
+    background-color: #4d4d18;
+    color: white;
+    border: 2px solid black;
+    width: auto;
+    padding:5px;
+  }
+  #transaction th{
+    text-align: left;
+    background-color: #333232;
+    color: white;
+    border: 2px solid black;
+    width: auto;
+    padding:5px;
+  }
+  
+
+#Btn{
+    width: 60px;
+    margin-left: 10px;
+    border: black solid 1px;
+    font-weight: 600;
+    color: #fff !important;
+    text-transform: uppercase;
+    background: #bd9090;
+    padding: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.4s ease 0s
+ }
+
+ #Btn:hover{
+    background: #a07c7c;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+ }
+
+ #Btn:focus{
+  width: 100px;
+  height: 45px;
+ }
