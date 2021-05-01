@@ -15,6 +15,11 @@
     box-shadow: -4px 3px 8px -3px rgba(0,0,0,0.71);
 }
 
+.box:hover{
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.71);
+  transform: scale(1.05);
+}
+
 #box_heading{
     font-size: 30px;
     font-weight: 500;
@@ -44,6 +49,7 @@
   
 #customers tr:hover, #product tr:hover, #transaction tr:hover {
       background-color: #bd9090;
+      cursor:pointer;
     }
 
     /* Heading: First name and Last name */
@@ -100,4 +106,8 @@
  #Btn:focus{
   width: 100px;
   height: 45px;
+ }
+
+ #customers tr:focus{
+    background-color: red;
  }
