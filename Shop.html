@@ -15,7 +15,8 @@
     <body>
         <div class = "clearfix"  id="information-section">
 <!-- Create box class which contains customer, product name and transaction -->
-
+            <br>
+            <br>
         <!-- Customer -->
             <div class = "box">
                 <p id = box_heading>Customer</p>
@@ -28,7 +29,7 @@
 
 <div class="button_cont" align="center"><a class="example_a" href="add-website-here" target="_blank" rel="nofollow noopener">Add Call to Action</a></div> -->
                 <br>
-                <br>
+                
                 <!-- Display the customer name and surname -->
                     <table id = customers>
                     <br>
@@ -36,11 +37,11 @@
                             <th>First Name</th>
                             <th>Last Name</th> 
                         </tr>
-                        <tr id = "customerRow" onclick = "deleteCustomerRow();">
+                        <tr onclick="deleteCustomerRow(this)">
                             <td>Knot</td>
                             <td>Anotha</td>
                         </tr>
-                        <tr>
+                        <tr onclick="deleteCustomerRow(this)">
                             <td>Jon</td>
                             <td>Doe</td>
                         </tr>
@@ -55,7 +56,7 @@
                 <p>Price (R): <input type="text" id="price" name="price" style="width:50px"></p>
                 <button id = "Btn" target="_blank" rel="nofollow noopener" onclick = "addProductRow();">Add</button>
                 <br>
-                <br>
+                
                 <!-- Display Name and Price of Product -->
                 <table id = product>
                     <br>
@@ -90,7 +91,7 @@
                     <p>Quantity: <input type="text" id="Quantity" name="Quantity" style="width:50px"></p>
                 <input id = "Btn" type = "submit" value="Add">
                 <br>
-                <br>
+                
                 <!-- Display customer, Product and have option for customer to choose quantity-->
                 <table id = transaction>
                     <br>
@@ -100,25 +101,14 @@
                             <th>Quantity</th>
                             <th>Price (R)</th>
                         </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
                     </table>
                     <br>
             </div>
 
         </div>
             
-
+        <br>
+        <br>
     </body>
     <script src = "Shop.js">  
     </script>
